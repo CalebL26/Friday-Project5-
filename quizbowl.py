@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect('databaseConn.py')
+connection = sqlite3.connect('FridayProj5.db')
 cursor = connection.cursor()
 questions = cursor.execute("SELECT * FROM QuestAns;").fetchall()  
 total_questions = len(questions)
